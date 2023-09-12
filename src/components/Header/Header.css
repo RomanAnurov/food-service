@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 16px 32px;
+}
+
+.header__burger {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 19px;
+}
