@@ -1,5 +1,5 @@
 import React from "react";
-import "./FoodDelivery.css";
+import "./FoodDelivery.scss";
 import "../Header/Header";
 import Header from "../Header/Header";
 

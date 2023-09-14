@@ -1,8 +1,9 @@
 import React from "react";
-import "./Header.css";
+import "./Header.scss";
 import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import burgerIcon from "../../images/BurgerIcon.svg";
+import HeaderNav from "../HeaderNav/HeaderNav";
 
 function Header(props) {
   const {onBurgerPopup, isOpen, onClose} = props;
@@ -16,6 +17,7 @@ function Header(props) {
         />
       </button>
       <Logo />
+      <HeaderNav />
     </header>
   );
 }

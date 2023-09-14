@@ -1,0 +1,9 @@
+.logo {
+  display: flex;
+  max-width: 154px;
+ 
+  &:hover {
+    opacity: 0.6;
+    transition: 0.4s opacity;
+  }
+}

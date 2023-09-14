@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import "./App.css";
+import "./App.scss";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import FoodDelivery from "../FoodDelivery/FoodDelivery";
 function App() {
