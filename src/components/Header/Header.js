@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import burgerIcon from "../../images/BurgerIcon.svg";
 import HeaderNav from "../HeaderNav/HeaderNav";
+import HeaderInputAddress from "../HeaderInputAddress/HeaderInputAddress";
 
 function Header(props) {
   const {onBurgerPopup, isOpen, onClose} = props;
@@ -17,6 +18,7 @@ function Header(props) {
         />
       </button>
       <Logo />
+      <HeaderInputAddress />
       <HeaderNav />
     </header>
   );

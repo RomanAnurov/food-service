@@ -1,0 +1,39 @@
+.addressform {
+  display: flex;
+  max-width: 325px;
+  width: 100%;
+  padding: 14px 24px;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 24px;
+  margin-left: auto;
+
+  &__geo-button {
+    border: none;
+
+    background: url(../../images/GeoIcon.svg);
+    background-color: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  &__input {
+    height: 17px;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    background-color: inherit;
+  }
+
+  &__edit-button {
+    border: none;
+    background: url(../../images/CheckIcon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
