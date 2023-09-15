@@ -2,6 +2,14 @@
   display: flex;
   align-items: center;
   padding: 16px 32px;
+  width: 100%;
+  min-height: 80px;
+  box-sizing: border-box;
+  
+  box-shadow: 2px 4px 10px 0px #8282820D;
+
+ 
+
 
   &__burger {
     border: none;

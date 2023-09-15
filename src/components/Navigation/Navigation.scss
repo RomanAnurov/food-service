@@ -1,0 +1,22 @@
+.navigation {
+  display: flex;
+  padding: 26px 32px 16px;
+  box-sizing: border-box;
+
+  &__link {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #928f87;
+    text-decoration: none;
+
+    &_active {
+      color: #2e1b0e;
+    }
+
+    &:nth-child(2) {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+}
