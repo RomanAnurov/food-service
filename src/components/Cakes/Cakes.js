@@ -7,7 +7,7 @@ function Cakes() {
   return (
     <><Header />
     <Navigation />
-    <p className="cakes">Здесь будут торты</p>
+    <h2 className="cakes">Здесь будет страница торты</h2>
     </>
   )
 }

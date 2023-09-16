@@ -3,6 +3,7 @@ import "./FoodDelivery.scss";
 import "../Header/Header";
 import Header from "../Header/Header";
 import Navigation from "../Navigation/Navigation";
+import MenuGallery from "../MenuGallery/MenuGallery";
 
 function FoodDelivery(props) {
 
@@ -13,6 +14,7 @@ function FoodDelivery(props) {
     <section className="fooddelivery">
       <Header onBurgerPopup={onBurgerPopup} />
       <Navigation />
+      <MenuGallery />
       
 
     </section>
