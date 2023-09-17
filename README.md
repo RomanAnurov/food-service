@@ -1,10 +1,29 @@
+### Тестовое задание приложение "foof delivery"
+
+Ещё в процессе работы:
+
+Осталось:
+1. написать компонент карточки товара(они будут рендериться в компоненте CardList)
+2. Попапы 
+3. Футер
 
 
-### `npm start`
+Ещё примерно 2 вечера и 1 вечер доделать адаптив и убрать баги.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Чтобы запустить проект нужно:
+1. cклонировать репозиторий
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Установить все зависимости командой:
+
+`npm install`
+
+3. Запустить проект:
+
+`npm start`
+
+Проект откроется в браузере по адресу:
+ [http://localhost:3000]
+
+https://food-test-anurov.surge.sh
+https://food-servis-roman.surge.sh
 
