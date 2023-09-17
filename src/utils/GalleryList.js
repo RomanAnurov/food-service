@@ -11,38 +11,38 @@ export const GalleryList = {
       {
         itemImageSrc: kulichi,
         /*thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria1.jpg',*/
-        alt: "Description for Image 1",
-        title: "Title 1",
+        alt: "Картинка",
+        title: "Пасхальные куличи от 320 руб.",
       },
       {
         itemImageSrc: kompoty,
         /*thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria2s.jpg',*/
-        alt: "Description for Image 2",
-        title: "Title 2",
+        alt: "Картинка",
+        title: "Новые морсы и компоты",
       },
       {
         itemImageSrc: brusketta,
         /*thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria3s.jpg',*/
-        alt: "Description for Image 3",
-        title: "Title 3",
+        alt: "Картинка",
+        title: "Брускетта с вялеными томатами и курицей",
       },
       {
         itemImageSrc: tortik,
         /*thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria4s.jpg',*/
-        alt: "Description for Image 4",
-        title: "Title 4",
+        alt: "Картинка",
+        title: "Хотете сладкого?",
       },
       {
         itemImageSrc: postnoe,
         /* thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria5s.jpg',*/
-        alt: "Description for Image 5",
-        title: "Title 5",
+        alt: "Картинка",
+        title: "Постное меню",
       },
       {
         itemImageSrc: graffik,
         /*thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria6s.jpg',*/
-        alt: "Description for Image 6",
-        title: "Title 6",
+        alt: "Картинка",
+        title: "График работы на праздниках",
       },
     ];
   },
