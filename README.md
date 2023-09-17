@@ -24,6 +24,6 @@
 Проект откроется в браузере по адресу:
  [http://localhost:3000]
 
-https://food-test-anurov.surge.sh
-https://food-servis-roman.surge.sh
+
+
 
