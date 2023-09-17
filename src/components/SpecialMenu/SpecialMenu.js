@@ -5,11 +5,14 @@ import Navigation from "../Navigation/Navigation";
 
 function SpecialMenu() {
   return (
-    <>
+    <section className="special-menu">
       <Header />
       <Navigation />
-      <h2 className="special-menu">Тут будет страница специальное меню</h2>
-    </>
+
+      <h2 className="special-menu__title">
+        Тут будет страница специальное меню
+      </h2>
+    </section>
   );
 }
 

@@ -1,9 +1,33 @@
 .navigation {
   display: flex;
-  padding: 26px 32px 16px;
+  padding: 26px 0px 16px;
   box-sizing: border-box;
+  overflow: hidden;
+  
+
+  &__container {
+    
+    width: 850px;
+   
+    
+    @media screen and (max-width: 1025px) {
+      overflow-x: scroll;
+      padding-bottom: 32px;
+     
+      margin-bottom: -35px;
+    }
+  }
+
+  &__list {
+   
+    display: flex;
+   
+
+  }
 
   &__link {
+    
+   text-wrap: nowrap;
     font-size: 32px;
     font-weight: 600;
     line-height: 1.2;

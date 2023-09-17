@@ -4,6 +4,7 @@ import "../Header/Header";
 import Header from "../Header/Header";
 import Navigation from "../Navigation/Navigation";
 import MenuGallery from "../MenuGallery/MenuGallery";
+import KatalogNavMenu from "../KatalogNavMenu/KatalogNavMenu";
 
 function FoodDelivery(props) {
 
@@ -15,6 +16,7 @@ function FoodDelivery(props) {
       <Header onBurgerPopup={onBurgerPopup} />
       <Navigation />
       <MenuGallery />
+      <KatalogNavMenu />
       
 
     </section>

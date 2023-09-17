@@ -30,7 +30,7 @@ export const GalleryList = {
         itemImageSrc: tortik,
         /*thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria4s.jpg',*/
         alt: "Картинка",
-        title: "Хотете сладкого?",
+        title: "Хотите сладкого?",
       },
       {
         itemImageSrc: postnoe,

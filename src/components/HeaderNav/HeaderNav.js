@@ -9,12 +9,12 @@ import basketIconWhite from "../../images/BasketIconWhiteSvg.svg";
 
 function HeaderNav() {
   return (
-    <div className="header-navigation">
-      <Button src={phoneIcon} text={"Позвонить"}/>
-      <Button src={favoritesIcon} text={"Избранное"}/>
-      <Button src={profileIcon} text={"Профиль"} />
-      <Button src={basketIconWhite} text={"Корзина"} isBasket={"true"}/>
-    </div>
+    <ul className="header-navigation">
+      <li> <Button src={phoneIcon} text={"Позвонить"} /></li>
+      <li> <Button src={favoritesIcon} text={"Избранное"} /></li>
+      <li> <Button src={profileIcon} text={"Профиль"} /></li>
+      <li> <Button src={basketIconWhite} text={"Корзина"} isBasket={"true"} /></li>
+    </ul>
   );
 }
 

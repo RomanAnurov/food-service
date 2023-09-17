@@ -1,0 +1,36 @@
+.katalog {
+  box-sizing: border-box;
+  padding: 0 0px 40px;
+  overflow: hidden ;
+
+  &__title {
+   
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0;
+    @media screen and (max-width: 768px) {
+      padding-top: 19px;
+      
+    }
+  }
+
+&__container {
+  
+  overflow-x: scroll;
+  padding-bottom: 40px;
+    margin-bottom: -80px;
+ 
+
+}
+  &__list {
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 24px;
+    
+   
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+}

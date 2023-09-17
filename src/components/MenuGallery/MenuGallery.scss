@@ -1,18 +1,20 @@
 .scroll-hidden {
   overflow: hidden;
+
 }
 
-.scroll-hidden:hover {
+/* .scroll-hidden:hover {
   overflow: visible;
-}
+}  */
 
 .gallery {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 32px 32px;
+  padding: 0 0px 32px;
+
   @media screen and (max-width: 768px) {
-    overflow-x: scroll;
+    overflow-x: auto;
     margin-bottom: -32px;
     justify-content: start;
   }
@@ -20,13 +22,15 @@
   &__grid {
     width: 100%;
     display: grid;
-    justify-content: center;
+
     align-self: center;
     grid-template-columns: repeat(6, 1fr);
     gap: 0 20px;
     grid-template-rows: 1fr;
+
     @media screen and (max-width: 768px) {
       grid-template-columns: repeat(6, 183px);
+
     }
   }
 
@@ -36,6 +40,7 @@
     position: relative;
     cursor: pointer;
   }
+
   &__card-title {
     padding: 0 16px;
     text-align: left;
@@ -48,16 +53,18 @@
     position: absolute;
     top: 7%;
     cursor: pointer;
-    
-    
+
+
   }
+
   &__item {
     width: 100%;
     object-fit: cover;
     height: 100%;
-   
-   
+
+
   }
+
   &__item-title {
     padding: 0 32px;
     text-align: left;
@@ -67,7 +74,7 @@
     color: #fff;
     position: absolute;
     top: 3%;
-    
+
     margin: 0;
   }
 }
@@ -76,11 +83,8 @@
   height: 560px;
   width: 356px;
 
-  @media screen and (max-width: 1024px) {
-  
-    
-  }
- 
+  @media screen and (max-width: 1024px) {}
+
 
   img {
     height: 100%;

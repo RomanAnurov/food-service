@@ -5,11 +5,13 @@ import Navigation from "../Navigation/Navigation";
 
 function Cakes() {
   return (
-    <><Header />
-    <Navigation />
-    <h2 className="cakes">Здесь будет страница торты</h2>
-    </>
-  )
+    <section className="cakes">
+      <Header />
+      <Navigation />
+
+      <h2 className="cakes__title">Здесь будет страница торты</h2>
+    </section>
+  );
 }
 
 export default Cakes;
