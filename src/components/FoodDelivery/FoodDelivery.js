@@ -5,6 +5,9 @@ import Header from "../Header/Header";
 import Navigation from "../Navigation/Navigation";
 import MenuGallery from "../MenuGallery/MenuGallery";
 import KatalogNavMenu from "../KatalogNavMenu/KatalogNavMenu";
+import CardList from "../CardList/CardList";
+
+
 
 function FoodDelivery(props) {
 
@@ -17,6 +20,7 @@ function FoodDelivery(props) {
       <Navigation />
       <MenuGallery />
       <KatalogNavMenu />
+      <CardList   />
       
 
     </section>

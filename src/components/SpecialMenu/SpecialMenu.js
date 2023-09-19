@@ -8,10 +8,7 @@ function SpecialMenu() {
     <section className="special-menu">
       <Header />
       <Navigation />
-
-      <h2 className="special-menu__title">
-        Тут будет страница специальное меню
-      </h2>
+      <h2 className="special-menu__title">Тут будет страница специальное меню</h2>
     </section>
   );
 }
