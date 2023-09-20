@@ -3,14 +3,121 @@
   border-radius: 24px;
   overflow: hidden;
 
+  &__container-image {
+    position: relative;
+
+  }
+
   &__image {
 
     box-sizing: border-box;
-  width: 286px;
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  cursor: pointer;
-  display: block;
+    width: 286px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    display: block;
   }
+
+&__like {
+  border: none;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 16px;
+  left: 16px;
+  background: url(../../images/FavouritesIconGray.svg);
+  cursor: pointer;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+  &_active {
+    background: url(../../images/StarIconRed.svg);
+
+  }
+
+}
+
+&__stiker {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  border-radius: 16px;
+  background-color: 
+  #576987;
+  display: flex;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  &_skidka {
+
+  }
+
+  &_novinka{
+
+  }
+
+}
+
+&__stiker-text {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #fff;
+ 
+}
+
+&__title {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: 
+  #2E1B0E;
+  line-height: 1.5;
+}
+
+&__discription {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-weight: 400;
+  color: 
+  #928F87;
+  line-height: 1.5;
+
+}
+
+&__info {
+  display: flex;
+  align-items: center;
+  color: 
+  #2E1B0E;
+  padding: 12px;
+
+
+}
+
+&__prise {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  
+  margin: 0;
+  
+}
+
+&__massa {
+  margin: 0 auto 0 4px;
+  font-size: 13px;
+  font-weight: 400;
+  font-weight: 1.5;
+  color: #928F87;
+  
+  }
+  
 }

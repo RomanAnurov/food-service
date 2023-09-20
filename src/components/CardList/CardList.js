@@ -4,7 +4,9 @@ import "./CardList.scss";
 import { InitialCards } from "../../utils/CardList";
 import Card from "../Card/Card";
 
-function CardList() {
+function CardList(props) {
+
+  const { title } = props;
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
@@ -13,11 +15,12 @@ function CardList() {
 
   return (
     <div className="card-container">
+      <h3 className="card-container__title">{title}</h3>
       <ul className="card-container__list">
         {cards.map((card) => {
           return (
             <li key={card.id}>
-              <Card card={card} />
+              <Card card={card}  />
             </li>
           );
         })}

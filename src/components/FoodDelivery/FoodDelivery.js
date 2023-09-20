@@ -20,7 +20,7 @@ function FoodDelivery(props) {
       <Navigation />
       <MenuGallery />
       <KatalogNavMenu />
-      <CardList   />
+      <CardList  title={"Популярное"} />
       
 
     </section>
