@@ -45,7 +45,7 @@ function Card(props) {
           <p className="card__stiker-text">{card.stikerText}</p>
         </div>
       </div>
-      <h3 className="card__title">{card.title}</h3>
+      <h4 className="card__title">{card.title}</h4>
       <p className="card__discription">{card.discription}</p>
       <div className="card__info">
       <p className="card__price">{card.price}</p>

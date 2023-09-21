@@ -1,4 +1,7 @@
 import omlet from "../images/kartochki/omlet.png";
+import kapusta from "../images/kartochki/kapusta.png";
+import pechenyeOvoshi from "../images/kartochki/pechenyeOvoshi.png";
+import shampinyony from "../images/kartochki/shampinyony.png";
 
 export const InitialCards = {
   getData() {
@@ -15,34 +18,34 @@ export const InitialCards = {
         id: "1",
       },
       {
-        link: omlet,
-        title: "Кускус с вялеными томатами",
+        link: kapusta,
+        title: "Капуста жаренная с грибами",
         stikerFon: "",
         stikerText: "Сезонное",
         discription:
-          "Кускус, вяленые томаты, чеснок, петрушка, соль, специи, растительное масло.",
-        price: "135 Р",
+          "Капуста белокочанная, шампиньоны, кинза, чеснок, соль, специи, растительное масло.",
+        price: "140 Р",
         massa: "200г",
         id: "2",
       },
       {
-        link: omlet,
-        title: "Кускус с вялеными томатами",
-        stikerFon: "",
-        stikerText: "Сезонное",
+        link: pechenyeOvoshi,
+        title: "Печеные овощи с соусом песто",
+        stikerFon: "procenty",
+        stikerText: "-20%",
         discription:
-          "Кускус, вяленые томаты, чеснок, петрушка, соль, специи, растительное масло.",
-        price: "135 Р",
+          "Кабачок, баклажан, помидор, лук репчатый, чеснок, растительное масло, соус песто",
+        price: "250 Р",
         massa: "200г",
         id: "3",
       },
       {
-        link: omlet,
-        title: "Кускус с вялеными томатами",
-        stikerFon: "",
-        stikerText: "Сезонное",
+        link: shampinyony,
+        title: "Шампиньоны маринованные",
+        stikerFon: "procenty",
+        stikerText: "-35%",
         discription:
-          "Кускус, вяленые томаты, чеснок, петрушка, соль, специи, растительное масло.",
+          "Шампиньоны ,лук репчатый, душистое масло, зелень, чеснок ",
         price: "135 Р",
         massa: "200г",
         id: "4",
