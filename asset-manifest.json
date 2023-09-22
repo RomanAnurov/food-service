@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/food-service/static/css/main.d5251abf.css",
-    "main.js": "/food-service/static/js/main.1cd4afe5.js",
+    "main.css": "/food-service/static/css/main.8e6335dd.css",
+    "main.js": "/food-service/static/js/main.c3af6d89.js",
     "static/js/787.8fa44975.chunk.js": "/food-service/static/js/787.8fa44975.chunk.js",
     "static/media/brusketta.png": "/food-service/static/media/brusketta.c1fa29b500ba6044b637.png",
     "static/media/tortik.png": "/food-service/static/media/tortik.4353c3e21d0764d649e9.png",
@@ -30,12 +30,12 @@
     "static/media/BurgerIcon.svg": "/food-service/static/media/BurgerIcon.dce2de6fe7fe922fe060cec286a4e282.svg",
     "static/media/CheckIcon.svg": "/food-service/static/media/CheckIcon.c5e89dfa4a3bbde4d6a9.svg",
     "static/media/ptichka.svg": "/food-service/static/media/ptichka.f654f50196d66a301b83fd515825220e.svg",
-    "main.d5251abf.css.map": "/food-service/static/css/main.d5251abf.css.map",
-    "main.1cd4afe5.js.map": "/food-service/static/js/main.1cd4afe5.js.map",
+    "main.8e6335dd.css.map": "/food-service/static/css/main.8e6335dd.css.map",
+    "main.c3af6d89.js.map": "/food-service/static/js/main.c3af6d89.js.map",
     "787.8fa44975.chunk.js.map": "/food-service/static/js/787.8fa44975.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5251abf.css",
-    "static/js/main.1cd4afe5.js"
+    "static/css/main.8e6335dd.css",
+    "static/js/main.c3af6d89.js"
   ]
 }
