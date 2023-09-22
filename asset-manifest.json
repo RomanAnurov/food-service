@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/food-service/static/css/main.fc093287.css",
-    "main.js": "/food-service/static/js/main.3c442c94.js",
+    "main.css": "/food-service/static/css/main.d5251abf.css",
+    "main.js": "/food-service/static/js/main.1cd4afe5.js",
     "static/js/787.8fa44975.chunk.js": "/food-service/static/js/787.8fa44975.chunk.js",
     "static/media/brusketta.png": "/food-service/static/media/brusketta.c1fa29b500ba6044b637.png",
     "static/media/tortik.png": "/food-service/static/media/tortik.4353c3e21d0764d649e9.png",
@@ -9,10 +9,14 @@
     "static/media/postnoe.png": "/food-service/static/media/postnoe.704abefccbe8eaf6d742.png",
     "static/media/kompoty.png": "/food-service/static/media/kompoty.dace74a232891ffe97e6.png",
     "static/media/graffik.png": "/food-service/static/media/graffik.9eee59665889df2ebf3f.png",
-    "static/media/omlet.png": "/food-service/static/media/omlet.27a789924c6568236af9.png",
+    "static/media/kuskus.png": "/food-service/static/media/kuskus.27a789924c6568236af9.png",
     "static/media/kapusta.png": "/food-service/static/media/kapusta.707a59247c7d9f8a1dc3.png",
+    "static/media/kuskus2.png": "/food-service/static/media/kuskus2.a68c1b0c5f3a8c9eeef5.png",
     "static/media/shampinyony.png": "/food-service/static/media/shampinyony.c1d04bb6cafd54369af8.png",
+    "static/media/shampinyony2.png": "/food-service/static/media/shampinyony2.014272e16b468390c762.png",
     "static/media/kulichi.png": "/food-service/static/media/kulichi.2496a9a9f23e601dc951.png",
+    "static/media/pechenye2.png": "/food-service/static/media/pechenye2.c097a355a54fa405d354.png",
+    "static/media/kapusta2.png": "/food-service/static/media/kapusta2.1d28abd82e81d79bc3db.png",
     "static/media/LogoPng.png": "/food-service/static/media/LogoPng.b66776d0953558f1a15f.png",
     "static/media/color.png": "/food-service/static/media/color.6441e63a57ccc5105bad.png",
     "static/media/PhoneIconSvg.svg": "/food-service/static/media/PhoneIconSvg.154635f1c34bc4f25befc61f5a427738.svg",
@@ -26,12 +30,12 @@
     "static/media/BurgerIcon.svg": "/food-service/static/media/BurgerIcon.dce2de6fe7fe922fe060cec286a4e282.svg",
     "static/media/CheckIcon.svg": "/food-service/static/media/CheckIcon.c5e89dfa4a3bbde4d6a9.svg",
     "static/media/ptichka.svg": "/food-service/static/media/ptichka.f654f50196d66a301b83fd515825220e.svg",
-    "main.fc093287.css.map": "/food-service/static/css/main.fc093287.css.map",
-    "main.3c442c94.js.map": "/food-service/static/js/main.3c442c94.js.map",
+    "main.d5251abf.css.map": "/food-service/static/css/main.d5251abf.css.map",
+    "main.1cd4afe5.js.map": "/food-service/static/js/main.1cd4afe5.js.map",
     "787.8fa44975.chunk.js.map": "/food-service/static/js/787.8fa44975.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc093287.css",
-    "static/js/main.3c442c94.js"
+    "static/css/main.d5251abf.css",
+    "static/js/main.1cd4afe5.js"
   ]
 }
