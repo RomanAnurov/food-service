@@ -1,5 +1,4 @@
 .card {
-
   border-radius: 24px;
   overflow: hidden;
 
@@ -45,19 +44,24 @@
     bottom: 16px;
     left: 16px;
     border-radius: 16px;
-    background-color:
-      #576987;
+    background-color: none;
     display: flex;
     padding: 4px 8px;
     box-sizing: border-box;
 
-    &_skidka {
+    &_type_skidka {
       background-color:#E0A110;
 
     }
 
-    &_novinka {
+    &_type_novinka {
       background-color: #971B40;
+    }
+
+    &_type_sezonnoe {
+       background-color:
+      #576987;
+     
     }
 
   }

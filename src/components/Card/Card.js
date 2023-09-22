@@ -36,9 +36,11 @@ function Card(props) {
         <div
           className={`card__stiker ${
             card.stikerFon === "procenty"
-              ? "card__stiker_skidka"
+              ? "card__stiker_type_skidka"
               : card.stikerFon === "novinka"
-              ? "card__stiker_novinka"
+              ? "card__stiker_type_novinka"
+              : card.stikerFon === "sezonnoe"
+              ? "card__stiker_type_sezonnoe"
               : ""
           }`}
         >
@@ -48,9 +50,9 @@ function Card(props) {
       <h4 className="card__title">{card.title}</h4>
       <p className="card__discription">{card.discription}</p>
       <div className="card__info">
-      <p className="card__price">{card.price}</p>
-      <p className="card__massa">{card.massa}</p>
-      <Button isBasket="true" text="В корзину" src={basketIcon} />
+        <p className="card__price">{card.price}</p>
+        <p className="card__massa">{card.massa}</p>
+        <Button isBasket="true" text="В корзину" src={basketIcon} />
       </div>
     </div>
   );
