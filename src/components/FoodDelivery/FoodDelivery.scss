@@ -1,6 +1,8 @@
 .fooddelivery {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 28px;
+  padding-right: 28px;
+  box-sizing: border-box;
+  
 
   @media screen and (max-width: 768px) {
     padding-left: 18px;

@@ -6,6 +6,7 @@ import Navigation from "../Navigation/Navigation";
 import MenuGallery from "../MenuGallery/MenuGallery";
 import KatalogNavMenu from "../KatalogNavMenu/KatalogNavMenu";
 import CardList from "../CardList/CardList";
+import Footer from "../Footer/Footer";
 
 
 
@@ -15,13 +16,14 @@ function FoodDelivery(props) {
 
 
   return (
-    <section className="fooddelivery">
+    <section className="fooddelivery" >
       <Header onBurgerPopup={onBurgerPopup} />
       <Navigation />
       <MenuGallery />
       <KatalogNavMenu />
       <CardList  title={"Популярное"} />
       <CardList  title={"Холодные закуски"} isSecondNumber="true" />
+      <Footer />
       
 
     </section>

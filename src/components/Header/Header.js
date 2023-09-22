@@ -9,7 +9,7 @@ import HeaderInputAddress from "../HeaderInputAddress/HeaderInputAddress";
 function Header(props) {
   const {onBurgerPopup, isOpen, onClose} = props;
   return (
-    <header className="header">
+    <header className="header" id="fooddelivery">
       <button className="header__burger" onClick={onBurgerPopup} type="button">
         <img
           src={burgerIcon}
