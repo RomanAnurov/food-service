@@ -1,0 +1,37 @@
+.popup {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 32px;
+    top: 92px;
+  width: 480px;
+  min-width: 320px;
+  height: 652px;
+  margin: 0;
+  
+
+  &_type_opened {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__container {
+    padding: 15px;
+    box-sizing: border-box;
+    position: absolute;
+    overflow-Y: auto;
+    align-items: center;
+    left: 0;
+    top:0;
+    border-radius: 16px;
+    width: 480px;
+    background: #fff;
+    height: 652px;
+    box-shadow: -1px 2px 23px 0px #0000001F;
+
+  }
+}
