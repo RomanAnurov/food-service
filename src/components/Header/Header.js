@@ -11,10 +11,10 @@ function Header(props) {
 
   const {onOpenClosePopup, isOpen} = props;
 
-  const burgerButtonClassname = `header__burger ${isOpen ? "header__burger_open" : "" }`;
+ 
   return (
     <header className="header" id="fooddelivery">
-      <button className={burgerButtonClassname} onClick={onOpenClosePopup} type="button">
+      <button className="header__burger" onClick={onOpenClosePopup} type="button">
         <img
           src={isOpen ? burgerIconClose : burgerIcon }
           className="header__burger-icon"
