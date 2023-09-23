@@ -16,7 +16,7 @@ function FoodDelivery(props) {
 
 
   return (
-    <section className="fooddelivery" >
+    <section className="fooddelivery">
       <Header onBurgerPopup={onBurgerPopup} />
       <Navigation />
       <MenuGallery />

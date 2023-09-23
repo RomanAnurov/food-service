@@ -26,7 +26,7 @@
 * [http://localhost:3000](http://localhost:3000)
 
 
- * [Ссылка на проект в gh-pages](https://romananurov.github.io/food-service/)
+
 
 
 
