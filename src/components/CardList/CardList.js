@@ -7,7 +7,7 @@ import { CardsColdFood } from "../../utils/CardListColdFood";
 import Card from "../Card/Card";
 
 function CardList(props) {
-  const { title, isSecondNumber } = props;
+  const { title, isSecondNumber, id } = props;
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
@@ -17,12 +17,12 @@ function CardList(props) {
   }, []);
 
   return (
-    <div className="card-container">
+    <div className="card-container" id={id}>
       <h3
         className={`card-container__title ${
           isSecondNumber && "card-container__title_second"
         }`}
-      >
+     >
         {title}
       </h3>
       <ul className="card-container__list">

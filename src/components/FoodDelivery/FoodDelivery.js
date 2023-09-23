@@ -21,8 +21,8 @@ function FoodDelivery(props) {
       <Navigation />
       <MenuGallery />
       <KatalogNavMenu />
-      <CardList  title={"Популярное"} />
-      <CardList  title={"Холодные закуски"} isSecondNumber="true" />
+      <CardList  title={"Популярное"} id={"popular"}/>
+      <CardList  title={"Холодные закуски"} isSecondNumber="true"  id={"coldfood"}/>
       <Footer />
       
 

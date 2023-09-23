@@ -11,21 +11,21 @@ import checkIcon from "../../images/kulinarya/ptichka.svg";
 
 
 function KatalogNavMenu() {
-  
+
   return (
     <section className="katalog">
       <h2 className="katalog__title">Каталог кулинарии</h2>
       <div className="katalog__container">
-      <div className="katalog__list">
-        <Button src={popular} text={"Популярное"} isKul={"true"} />
-        <Button src={coldFood} text={"Холодные закуски"} isKul={"true"} />
-        <Button src={salat} text={"Салаты"} isKul={"true"} />
-        <Button src={pervoe} text={"Первые блюда"} isKul={"true"} />
-        <Button src={garnir} text={"Гарниры"} isKul={"true"} />
-        <Button src={vtoroe} text={"Популярное"} isKul={"true"} />
-        <Button src={checkIcon} text={"Ещё"} isKul={"true"}/>
-        
-      </div>
+        <div className="katalog__list">
+          <Button src={popular} text={"Популярное"} isKul={"true"} link={"#popular"} />
+          <Button src={coldFood} text={"Холодные закуски"} isKul={"true"} link={"#coldfood"} />
+          <Button src={salat} text={"Салаты"} isKul={"true"} />
+          <Button src={pervoe} text={"Первые блюда"} isKul={"true"} />
+          <Button src={garnir} text={"Гарниры"} isKul={"true"} />
+          <Button src={vtoroe} text={"Вторые блюда"} isKul={"true"} />
+          <Button src={checkIcon} text={"Ещё"} isKul={"true"} />
+
+        </div>
       </div>
     </section>
 
