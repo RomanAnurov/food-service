@@ -1,19 +1,18 @@
 .popup {
- display: none;
+  display: none;
   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s linear;
-  
   position: absolute;
   justify-content: center;
   align-items: center;
   left: 32px;
-    top: 92px;
+  top: 92px;
   width: 480px;
   width: 100%;
   min-width: 320px;
   height: 652px;
   margin: 0;
-  
+
 
   &_type_opened {
     display: flex;
@@ -27,7 +26,7 @@
     overflow-Y: auto;
     align-items: center;
     left: 0;
-    top:0;
+    top: 0;
     border-radius: 16px;
     width: 480px;
     background: #fff;
@@ -36,5 +35,3 @@
 
   }
 }
-
-
