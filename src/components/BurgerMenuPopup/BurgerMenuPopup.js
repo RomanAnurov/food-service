@@ -2,9 +2,9 @@ import React from "react";
 import "./BurgerMenuPopup.scss";
 import BurgerInputSearch from "../BurgerInputSearch/BurgerInputSearch";
 import Navigation from "../Navigation/Navigation";
+import Accordeon from "../Accordeon/Accordeon";
 
 function BurgerMenuPopup(props) {
-
   const { isOpen } = props;
 
   return (
@@ -13,15 +13,12 @@ function BurgerMenuPopup(props) {
         <BurgerInputSearch />
         <div className="popup__catalogs">
           <h4 className="popup__catalogs-title">Меню и каталоги</h4>
-          <Navigation isBurger="true"/>
-
-
+          <Navigation isBurger="true" />
         </div>
-        
+        <Accordeon />
       </div>
-
     </section>
-  )
+  );
 }
 
 export default BurgerMenuPopup;

@@ -11,6 +11,7 @@ import Footer from "../Footer/Footer";
 
 
 
+
 function FoodDelivery(props) {
 
   const {onOpenClosePopup, isOpen} = props;
@@ -24,6 +25,7 @@ function FoodDelivery(props) {
       <KatalogNavMenu />
       <CardList  title={"Популярное"} id={"popular"}/>
       <CardList  title={"Холодные закуски"} isSecondNumber="true"  id={"coldfood"}/>
+      
       <Footer />
       
       
