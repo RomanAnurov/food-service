@@ -7,7 +7,7 @@ import MenuGallery from "../MenuGallery/MenuGallery";
 import KatalogNavMenu from "../KatalogNavMenu/KatalogNavMenu";
 import CardList from "../CardList/CardList";
 import Footer from "../Footer/Footer";
-import BurgerMenu from "../BurgerMenu/BurgerMenu";
+
 
 
 

@@ -5,7 +5,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import FoodDelivery from "../FoodDelivery/FoodDelivery";
 import Cakes from "../Cakes/Cakes";
 import SpecialMenu from "../SpecialMenu/SpecialMenu";
-import BurgerMenu from "../BurgerMenu/BurgerMenu";
+import BurgerMenuPopup from "../BurgerMenuPopup/BurgerMenuPopup";
 
 function App() {
   const [isOpenPopup, setIsOpenPopup] = useState(false);
@@ -37,7 +37,7 @@ function App() {
         <Route path="/cakes" element={<Cakes />} />
         <Route path="/special-menu" element={<SpecialMenu />} />
       </Routes>
-      <BurgerMenu isOpen={isOpenPopup} />
+      <BurgerMenuPopup isOpen={isOpenPopup} />
     </div>
   );
 }
