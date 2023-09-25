@@ -16,6 +16,7 @@ function BurgerMenuPopup(props) {
           <Navigation isBurger="true" />
         </div>
         <Accordeon />
+        <a className="popup__catalogs-link" href="#grafik">График работы</a>
       </div>
     </section>
   );

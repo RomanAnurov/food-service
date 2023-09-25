@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Data } from "../../utils/DataAccordeonBurger";
-import { FiPlus, FiMinus } from "react-icons/fi";
 import  "./Accordeon.scss";
+import iconAccordeon from '../../images/AccordeonIcon.svg';
 
 
 
@@ -28,11 +28,12 @@ const Accordeon = () => {
       <div className="accordeon__container">
         {Data.map((item, index) => {
           return (
-            <li className="accordeon__wrap" key={index}>
+            <div className="accordeon__wrap" key={index}>
               <div className={`accordeon__button ${clicked === index ?
-                "accordeon__button_active" : ''}`}  onClick={() => toggle(index)} key={index}>
+                "accordeon__button_active" : ''}`}  onClick={() => toggle(index)}>
                 <h4 className="accordeon__title">{item.title}</h4>
-                <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
+                <img className={`accordeon__icon ${clicked === index ? "accordeon__icon_rotate" : ''}`}
+                 src={iconAccordeon} alt="иконка чекбокс"/>
               </div>
               {clicked === index ? ( 
                 <div className="accordeon__dropdown"> 
@@ -45,7 +46,7 @@ const Accordeon = () => {
                   <a className="accordeon__dropdown-link" href="/">{item.textseven}</a>
                 </div>
               ) : null}
-            </li>
+            </div>
           );
         })}
       </div>

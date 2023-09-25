@@ -36,7 +36,7 @@ function Footer() {
         </ul>
 
         <ul>
-          <h4 className="footer__links">График работы</h4>
+          <h4 className="footer__links" id="grafik">График работы</h4>
           <li><p className="footer__link footer__link_large">График кулинарий</p></li>
           <li><p className="footer__link footer__link_large" >Пн - Сб <span>8:00 - 21:00</span></p></li>
           <li><p className="footer__link footer__link_large" >Вс <span>11:00 - 21:00</span></p></li>
