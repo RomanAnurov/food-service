@@ -1,0 +1,21 @@
+.popup {
+  display: none;
+  opacity: 0;
+  margin: 0;
+
+ 
+  &_type_opened {
+    display: flex;
+    opacity: 1;
+  }
+
+  &__container {
+    box-sizing: border-box;
+    border-radius: 16px;
+    background: #fff;
+   
+  }
+
+ 
+ 
+}

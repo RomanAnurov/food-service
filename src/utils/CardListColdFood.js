@@ -1,7 +1,4 @@
-import kuskus from "../images/kartochki/kuskus.png";
-import kapusta from "../images/kartochki/kapusta.png";
-import pechenyeOvoshi from "../images/kartochki/pechenyeOvoshi.png";
-import shampinyony from "../images/kartochki/shampinyony.png";
+
 import kapustaTwo from "../images/kartochki/kapusta2.png";
 import pechenyeOvoshiTwo from "../images/kartochki/pechenye2.png";
 import shampinyonyTwo from "../images/kartochki/shampinyony2.png";

@@ -14,12 +14,12 @@ import Footer from "../Footer/Footer";
 
 function FoodDelivery(props) {
 
-  const {onOpenClosePopup, isOpen} = props;
+  const {onBurgerPopup, onCallPopup, isOpen} = props;
 
 
   return (
     <section className="fooddelivery">
-      <Header onOpenClosePopup={onOpenClosePopup} isOpen={isOpen} />
+      <Header onBurgerPopup={onBurgerPopup}  onCallPopup={onCallPopup} isOpen={isOpen} />
       <Navigation />
       <MenuGallery />
       <KatalogNavMenu />
