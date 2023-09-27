@@ -3,10 +3,15 @@ import "./Cakes.scss";
 import Header from "../Header/Header";
 import Navigation from "../Navigation/Navigation";
 
-function Cakes() {
+function Cakes(props) {
+  const { onBurgerPopup, onCallPopup, isOpen } = props;
   return (
     <section className="cakes">
-      <Header />
+      <Header
+        onBurgerPopup={onBurgerPopup}
+        onCallPopup={onCallPopup}
+        isOpen={isOpen}
+      />
       <Navigation />
 
       <h2 className="cakes__title">Здесь будет страница торты</h2>

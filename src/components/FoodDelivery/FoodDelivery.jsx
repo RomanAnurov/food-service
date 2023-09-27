@@ -8,30 +8,30 @@ import KatalogNavMenu from "../KatalogNavMenu/KatalogNavMenu";
 import CardList from "../CardList/CardList";
 import Footer from "../Footer/Footer";
 
-
-
-
-
 function FoodDelivery(props) {
-
-  const {onBurgerPopup, onCallPopup, isOpen} = props;
-
+  const { onBurgerPopup, onCallPopup, onAddressPopup, isOpen } = props;
 
   return (
     <section className="fooddelivery">
-      <Header onBurgerPopup={onBurgerPopup}  onCallPopup={onCallPopup} isOpen={isOpen} />
+      <Header
+        onBurgerPopup={onBurgerPopup}
+        onCallPopup={onCallPopup}
+        onAddressPopup={onAddressPopup}
+        isOpen={isOpen}
+      />
       <Navigation />
       <MenuGallery />
       <KatalogNavMenu />
-      <CardList  title={"Популярное"} id={"popular"}/>
-      <CardList  title={"Холодные закуски"} isSecondNumber="true"  id={"coldfood"}/>
-      
-      <Footer />
-      
-      
+      <CardList title={"Популярное"} id={"popular"} />
+      <CardList
+        title={"Холодные закуски"}
+        isSecondNumber="true"
+        id={"coldfood"}
+      />
 
+      <Footer />
     </section>
-  )
+  );
 }
 
 export default FoodDelivery;

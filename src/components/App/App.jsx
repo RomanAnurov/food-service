@@ -5,12 +5,14 @@ import { Routes, Route } from "react-router-dom";
 import FoodDelivery from "../FoodDelivery/FoodDelivery";
 import Cakes from "../Cakes/Cakes";
 import SpecialMenu from "../SpecialMenu/SpecialMenu";
-import BurgerMenuPopup from "../BurgerMenuPopup/BurgerMenuPopup";
+import PopupBurgerMenu from "../PopupBurgerMenu/PopupBurgerMenu";
 import PopupCall from "../PopupCall/PopupCall";
+import PopupAddress from "../PopupAddress/PopupAddress";
 
 function App() {
   const [isBurgerPopupOpen, setIsBurgerPopupOpen] = useState(false);
   const [isCallPopupOpen, setIsCallPopupOpen] = useState(false);
+  const[isAddressPopupOpen, setIsAddressPopupOpen] = useState(false);
 
   function handleBurgerPopupOpen() {
     setIsBurgerPopupOpen(true);
@@ -20,9 +22,6 @@ function App() {
     setIsBurgerPopupOpen(false);
   }
 
-  function handlePopupOpenCloseBurger() {
-    isBurgerPopupOpen ? handleBurgerPopupClose() : handleBurgerPopupOpen();
-  }
 
   function handleCallPopupOpen() {
     setIsCallPopupOpen(true);
@@ -31,6 +30,16 @@ function App() {
   function handleCallPopupClose() {
     setIsCallPopupOpen(false);
   }
+
+  function handleAddressPopupOpen() {
+    setIsAddressPopupOpen(true);
+  }
+
+
+  function handlePopupOpenCloseBurger() {
+    isBurgerPopupOpen ? handleBurgerPopupClose() : handleBurgerPopupOpen();
+  }
+
 
   function handlePopupOpenCloseCall() {
     isCallPopupOpen ? handleCallPopupClose() : handleCallPopupOpen();
@@ -46,14 +55,34 @@ function App() {
               onBurgerPopup={handlePopupOpenCloseBurger}
               isOpen={isBurgerPopupOpen}
               onCallPopup={handlePopupOpenCloseCall}
+              onAddressPopup={handleAddressPopupOpen}
             />
           }
         />
-        <Route path="/cakes" element={<Cakes />} />
-        <Route path="/special-menu" element={<SpecialMenu />} />
+        <Route
+          path="/cakes"
+          element={
+            <Cakes
+              onBurgerPopup={handlePopupOpenCloseBurger}
+              isOpen={isBurgerPopupOpen}
+              onCallPopup={handlePopupOpenCloseCall}
+            />
+          }
+        />
+        <Route
+          path="/special-menu"
+          element={
+            <SpecialMenu
+              onBurgerPopup={handlePopupOpenCloseBurger}
+              isOpen={isBurgerPopupOpen}
+              onCallPopup={handlePopupOpenCloseCall}
+            />
+          }
+        />
       </Routes>
-      <BurgerMenuPopup isOpen={isBurgerPopupOpen} />
+      <PopupBurgerMenu isOpen={isBurgerPopupOpen} />
       <PopupCall isOpen={isCallPopupOpen} />
+      <PopupAddress isOpen={isAddressPopupOpen} />
     </div>
   );
 }

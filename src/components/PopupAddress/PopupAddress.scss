@@ -1,0 +1,41 @@
+.popup {
+
+&_type_address {
+  
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  left: 0%;
+  top: 0;
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+&__container {
+
+  &_type_address {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 731px;
+
+
+  }
+}
+
+
+
+  &__address-title{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+
+  }
+
+
+}
