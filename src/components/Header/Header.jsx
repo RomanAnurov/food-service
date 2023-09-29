@@ -9,7 +9,7 @@ import HeaderInputAddress from "../HeaderInputAddress/HeaderInputAddress";
 
 function Header(props) {
 
-  const { onBurgerPopup, onCallPopup, onAddressPopup, isOpen } = props;
+  const { onBurgerPopup, onCallPopup, onAddressPopup, onAddressSavePopup, isOpen } = props;
 
 
   return (
@@ -22,7 +22,7 @@ function Header(props) {
         />
       </button>
       <Logo />
-      <HeaderInputAddress onAddressPopup={onAddressPopup}/>
+      <HeaderInputAddress onAddressPopup={onAddressPopup} onAddressSavePopup={onAddressSavePopup} />
       <HeaderNav onCallPopup={onCallPopup}  />
     </header>
   );

@@ -9,7 +9,7 @@ import CardList from "../CardList/CardList";
 import Footer from "../Footer/Footer";
 
 function FoodDelivery(props) {
-  const { onBurgerPopup, onCallPopup, onAddressPopup, isOpen } = props;
+  const { onBurgerPopup, onCallPopup, onAddressPopup, onAddressSavePopup, isOpen } = props;
 
   return (
     <section className="fooddelivery">
@@ -17,6 +17,7 @@ function FoodDelivery(props) {
         onBurgerPopup={onBurgerPopup}
         onCallPopup={onCallPopup}
         onAddressPopup={onAddressPopup}
+        onAddressSavePopup={onAddressSavePopup}
         isOpen={isOpen}
       />
       <Navigation />

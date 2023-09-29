@@ -10,9 +10,23 @@
     border-radius: 12px;
   }
 
+  &_type_address {
+    padding: 0;
+
+    margin-bottom: 12px;
+
+    border-radius: 12px;
+
+    width: 683px;
+    height: 43px;
+  }
+
   &__input {
     border: none;
     margin-left: 24px;
+    display: flex;
+    align-items: center;
+    color: #928F87;
 
     &_type_burger {
       height: 24px;
@@ -20,6 +34,22 @@
       font-size: 16px;
       font-weight: 500;
       line-height: 1.5;
+    }
+
+    &_type_address {
+     
+      margin-left: 0px;
+      margin-right: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      background: #f8f8f8;
+     padding: 13px 24px;
+     border-radius: 12px;
+     box-sizing: border-box;
+
+      width: 539px;
+      height: 43px;
     }
   }
   &__button {
@@ -31,19 +61,30 @@
     &_type_burger {
       border: none;
     }
+
+    &_type_address {
+      width: 136px;
+      border-radius: 12px;
+      border: none;
+      height: 43px;
+      background: #fd6342;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
   }
 
   &__icon {
-
     &_type_burger {
-    margin-left: 10px;
-    margin-right: 16px;
-    width: 24px;
-    height: 24px;
-  }
+      margin-left: 10px;
+      margin-right: 16px;
+      width: 24px;
+      height: 24px;
+    }
 
-  &_type_address {
-    display: none;
+    &_type_address {
+      display: none;
+    }
   }
-}
 }

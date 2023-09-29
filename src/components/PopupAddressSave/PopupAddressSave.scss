@@ -1,0 +1,73 @@
+.popup {
+
+  &_type_addressuser {
+      
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 92px;
+    left: 260px;
+    width: 325px;
+    min-width: 320px;
+  }
+
+  &__title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  &__container {
+    &_type_addressuser {
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 20px;
+      align-items: start;
+      width: 325px;
+      box-shadow: 2px 2px 16px 0px #72727229;
+    }
+  }
+
+  &__title_type_addressuser {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2e1b0e;
+    list-style: 1.5;
+    margin: 0;
+  }
+
+  &__address-cotainer {
+    display: flex;
+    margin-bottom: 12px;
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__address-text {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    &_active {
+      color: #fd6342;
+    }
+  }
+
+  &__address-icon {
+    margin-left: 12px;
+  }
+
+  &__button {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-left: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: url(../../images/PlusButtonIcon.svg);
+    border: none;
+    cursor: pointer;
+  }
+}

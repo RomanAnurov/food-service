@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
@@ -8,11 +8,19 @@ import SpecialMenu from "../SpecialMenu/SpecialMenu";
 import PopupBurgerMenu from "../PopupBurgerMenu/PopupBurgerMenu";
 import PopupCall from "../PopupCall/PopupCall";
 import PopupAddress from "../PopupAddress/PopupAddress";
+import PopupAddressSave from "../PopupAddressSave/PopupAddressSave";
 
 function App() {
   const [isBurgerPopupOpen, setIsBurgerPopupOpen] = useState(false);
   const [isCallPopupOpen, setIsCallPopupOpen] = useState(false);
-  const[isAddressPopupOpen, setIsAddressPopupOpen] = useState(false);
+  const [isAddressPopupOpen, setIsAddressPopupOpen] = useState(false);
+  const [isAddressSavePopupOpen, setIsAddressSavePopupOpen] = useState(false);
+
+  useEffect(() => {
+    isAddressPopupOpen && handleAddressSavePopupClose() 
+    isAddressPopupOpen && handleCallPopupClose()
+
+  }, [isAddressPopupOpen]);
 
   function handleBurgerPopupOpen() {
     setIsBurgerPopupOpen(true);
@@ -21,7 +29,6 @@ function App() {
   function handleBurgerPopupClose() {
     setIsBurgerPopupOpen(false);
   }
-
 
   function handleCallPopupOpen() {
     setIsCallPopupOpen(true);
@@ -35,14 +42,29 @@ function App() {
     setIsAddressPopupOpen(true);
   }
 
-
+  function handleAddressPopupClose() {
+    setIsAddressPopupOpen(false);
+  }
   function handlePopupOpenCloseBurger() {
     isBurgerPopupOpen ? handleBurgerPopupClose() : handleBurgerPopupOpen();
   }
 
-
   function handlePopupOpenCloseCall() {
     isCallPopupOpen ? handleCallPopupClose() : handleCallPopupOpen();
+  }
+
+  function handleAddressSavePopupOpen() {
+    setIsAddressSavePopupOpen(true);
+  }
+
+  function handleAddressSavePopupClose() {
+    setIsAddressSavePopupOpen(false);
+  }
+
+  function handleAddressSavePopupCloseOpen() {
+    isAddressSavePopupOpen
+      ? handleAddressSavePopupClose()
+      : handleAddressSavePopupOpen();
   }
 
   return (
@@ -56,6 +78,7 @@ function App() {
               isOpen={isBurgerPopupOpen}
               onCallPopup={handlePopupOpenCloseCall}
               onAddressPopup={handleAddressPopupOpen}
+              onAddressSavePopup={handleAddressSavePopupCloseOpen}
             />
           }
         />
@@ -82,7 +105,15 @@ function App() {
       </Routes>
       <PopupBurgerMenu isOpen={isBurgerPopupOpen} />
       <PopupCall isOpen={isCallPopupOpen} />
-      <PopupAddress isOpen={isAddressPopupOpen} />
+      <PopupAddress
+        isOpen={isAddressPopupOpen}
+        onClose={handleAddressPopupClose}
+      />
+      <PopupAddressSave
+        isOpen={isAddressSavePopupOpen}
+        onAddressPopup={handleAddressPopupOpen}
+        onClose={handleAddressSavePopupClose}
+      />
     </div>
   );
 }
