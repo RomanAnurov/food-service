@@ -19,6 +19,7 @@ function App() {
   useEffect(() => {
     isAddressPopupOpen && handleAddressSavePopupClose() 
     isAddressPopupOpen && handleCallPopupClose()
+    isAddressPopupOpen && handleBurgerPopupClose()
 
   }, [isAddressPopupOpen]);
 

@@ -18,10 +18,10 @@ function PopupAddressSave(props) {
           <p className="popup__address-text popup__address-text_active">
             Никитинская 42
           </p>
-          <img className="popup__address-icon" src={iconCheck} alt="иконка" />
+          <img className="popup__address-icon popup__address-icon_active" src={iconCheck} alt="иконка" />
         </li>
         <li className="popup__address-cotainer">
-          <p className="popup__address-text popup__address-text_active">
+          <p className="popup__address-text">
           пл. Ленина 12а, д. 42
           </p>
           <img className="popup__address-icon" src={iconCheck} alt="иконка" />

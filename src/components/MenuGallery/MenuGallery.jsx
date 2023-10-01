@@ -38,12 +38,13 @@ function MenuGallery() {
         <Galleria
           ref={galleria}
           value={images}
-          numVisible={7}
+          numVisible={3}
           activeIndex={activeIndex}
           onItemChange={(e) => setActiveIndex(e.index)}
           circular
           fullScreen
           showItemNavigators
+          showIndicators          
           showThumbnails={false}
           item={itemTemplate} /*thumbnail={thumbnailTemplate}*/
         />
