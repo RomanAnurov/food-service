@@ -14,10 +14,21 @@
   box-sizing: border-box;
   cursor: pointer;
 
+  &_type_header {
+    @media screen and (max-width: 1023px) {
+      margin-left: 20px;
+      margin-right: 20px;
+      a {
+        display: none;
+      }
 
+      img {
+        margin-right: 0;
+      }
+    }
+  }
 
-
-  &_basket {
+  &_type_basket {
     padding: 12px 18px;
     margin: 0;
     background: #fd6342;
@@ -27,10 +38,25 @@
     height: 48px;
     border-radius: 24px;
 
+    @media screen and (max-width: 767px) {
+      background: none;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      margin-left: 20px;
+      margin-right: 20px;
+
+      a {
+        display: none;
+      }
+      img {
+        margin-right: 0;
+      }
+    }
   }
 
-  &_kul {
-    background: #FBFBFB;
+  &_type_kul {
+    background: #fbfbfb;
     border-radius: 24px;
     padding: 10px 20px;
     margin-right: 12px;
@@ -39,12 +65,14 @@
     a {
       text-decoration: none;
       color: #2e1b0e;
+    }
 
+    img {
+      margin-right: 8px;
     }
 
     &:hover {
-      box-shadow: 2px 2px 10px 0px #6363631A;
-
+      box-shadow: 2px 2px 10px 0px #6363631a;
     }
 
     &:last-child {
@@ -53,86 +81,65 @@
       img {
         margin-right: 0;
         margin-left: 8px;
-
       }
-
     }
-
   }
-  &_slider {
+  &__type_slider {
     position: absolute;
     @media screen and (max-width: 2560px) {
-    background: #fff;
-    height: 43px;
-    width: 345px;
-    color: #000;
-    border-radius: 49px;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 600;
-    margin-right: 0;
-    
-    bottom: 24px;
-    left: 10%;
+      background: #fff;
+      height: 43px;
+      width: 345px;
+      color: #000;
+      border-radius: 49px;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 600;
+      margin-right: 0;
+
+      bottom: 24px;
+      left: 10%;
     }
     @media screen and (max-width: 1366px) {
       width: 345px;
       left: 4%;
-     
     }
-
-
 
     @media screen and (max-width: 768px) {
       width: 300px;
       left: 5%;
       margin-top: -50px;
-     
-      
-     
     }
     @media screen and (max-width: 425px) {
       width: 300px;
       left: 12%;
       margin-top: -50px;
-     
-         
     }
 
     @media screen and (max-width: 375px) {
       width: 300px;
       left: 8%;
       margin-top: -50px;
-     
-         
     }
     @media screen and (max-width: 360px) {
       width: 300px;
       left: 7%;
       margin-top: -50px;
-     
-         
     }
     @media screen and (max-width: 325px) {
       width: 300px;
       left: 3%;
       margin-top: -50px;
-     
-         
     }
-
 
     img {
       display: none;
     }
-
-    
   }
 
   &__icon {
     margin-right: 8px;
-    
+    @media screen and (max-width: 1023px) {
+    }
   }
-
-
 }

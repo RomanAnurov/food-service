@@ -1,9 +1,21 @@
+
 .logo {
   display: flex;
   max-width: 154px;
+  align-items: center;
+  a {
+    height: 20px;
+  }
+ 
  
   &:hover {
     opacity: 0.6;
     transition: 0.4s opacity;
+  }
+
+
+  @media screen and (max-width:525px) {
+    max-width: 92px;
+    
   }
 }
