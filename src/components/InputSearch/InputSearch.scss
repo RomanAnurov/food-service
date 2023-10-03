@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  
 
   &_type_burger {
     width: 432px;
@@ -19,6 +21,7 @@
 
     width: 683px;
     height: 43px;
+   
   }
 
   &__input {
@@ -50,6 +53,7 @@
 
       width: 539px;
       height: 43px;
+      
     }
   }
   &__button {

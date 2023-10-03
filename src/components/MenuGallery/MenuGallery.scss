@@ -135,7 +135,14 @@ left: -80px;
     margin-bottom: -32px;
     justify-content: start;
   }
-
+  @media screen and (max-width: 768px) {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+  @media screen and (max-width: 425px) {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
   &__grid {
     width: 100%;
     display: grid;
