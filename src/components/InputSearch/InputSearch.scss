@@ -10,6 +10,10 @@
     height: 56px;
     border: 1px solid #d9d9d9;
     border-radius: 12px;
+    @media screen and (max-width:525px) {
+      width: 100%;
+      
+    }
   }
 
   &_type_address {
