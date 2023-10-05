@@ -10,6 +10,12 @@
     top: 92px;
     width: 480px;
     min-width: 320px;
+
+    @media screen and (max-width: 525px) {
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
   }
 
   &__container {
@@ -25,6 +31,13 @@
       top: 0;
       width: 480px;
       box-shadow: -1px 2px 23px 0px #0000001f;
+
+      @media screen and (max-width: 525px) {
+        padding-top: 48px;
+        width: 100%;
+        left: 0;
+        grid-template-columns: 1fr;
+      }
     }
   }
 
@@ -43,12 +56,18 @@
       background-color: #f5f5f6;
 
       box-sizing: border-box;
+
+      @media screen and(max-width:525px) {
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
     }
   }
 
   &__shops-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 8px 12px;
   }
 
@@ -78,5 +97,18 @@
     font-weight: 500;
     line-height: 1.5;
     margin: 0;
+  }
+  &__close-call {
+    @media screen and(max-width:768px) {
+      width: 20px;
+      height: 20px;
+      top: 12px;
+      right: 12px;
+      position: absolute;
+      border: none;
+      background: url(../../images/ButtonCloseIcon.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 }

@@ -17,6 +17,12 @@ function App() {
   const [isAddressSavePopupOpen, setIsAddressSavePopupOpen] = useState(false);
 
   useEffect(() => {
+    isCallPopupOpen && handleAddressSavePopupClose() 
+    isCallPopupOpen && handleBurgerPopupClose()
+
+  }, [isCallPopupOpen]);
+
+  useEffect(() => {
     isAddressPopupOpen && handleAddressSavePopupClose() 
     isAddressPopupOpen && handleCallPopupClose()
     isAddressPopupOpen && handleBurgerPopupClose()
@@ -105,7 +111,7 @@ function App() {
         />
       </Routes>
       <PopupBurgerMenu isOpen={isBurgerPopupOpen} />
-      <PopupCall isOpen={isCallPopupOpen} />
+      <PopupCall isOpen={isCallPopupOpen} onClose={handleCallPopupClose}/>
       <PopupAddress
         isOpen={isAddressPopupOpen}
         onClose={handleAddressPopupClose}

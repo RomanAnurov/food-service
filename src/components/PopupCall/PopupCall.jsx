@@ -3,7 +3,7 @@ import "./PopupCall.scss";
 import Popup from "../Popup/Popup";
 
 function PopupCall(props) {
-  const { isOpen } = props;
+  const { isOpen, onClose} = props;
 
   return (
     <Popup isOpen={ isOpen } name="call">
@@ -61,6 +61,11 @@ function PopupCall(props) {
           </li>
         </ul>
       </div>
+      <button
+          className="popup__close-call"
+          onClick={onClose}
+          type="button"
+        ></button>
     </Popup>
   );
 }
