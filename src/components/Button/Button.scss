@@ -83,6 +83,42 @@
 
   }
 
+  &_type_basket-card {
+   
+      padding: 12px 18px;
+      margin: 0;
+      background: #fd6342;
+      font-weight: 600;
+      color: white;
+      width: 142px;
+      height: 48px;
+      border-radius: 24px;
+  
+      @media screen and (max-width: 600px) {
+        display: flex;
+        align-items: center;
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        margin-right: 6px;
+        border-radius: 50%;
+  
+        a {
+          display: none;
+        }
+        img {
+          margin-right: 0;
+        }
+      }
+  
+      @media screen and (max-width: 768px) {
+      }
+      margin-right: 12px;
+  
+    }
+
+  
+
   &_type_kul {
     background: #fbfbfb;
     border-radius: 24px;

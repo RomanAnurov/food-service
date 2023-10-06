@@ -15,7 +15,8 @@ export const CardsColdFood = {
         stikerText: "Сезонное",
         discription:
           "Кускус, вяленые томаты, чеснок, петрушка, соль, специи, растительное масло.",
-        price: "135 Р",
+          skidka: "150",
+        price: "135",
         massa: "200г",
         id: "1",
       },
@@ -26,7 +27,8 @@ export const CardsColdFood = {
         stikerText: "Сезонное",
         discription:
           "Капуста белокочанная, шампиньоны, кинза, чеснок, соль, специи, растительное масло.",
-        price: "140 Р",
+          skidka: "150",
+        price: "140",
         massa: "200г",
         id: "2",
       },
@@ -37,7 +39,8 @@ export const CardsColdFood = {
         stikerText: "20%",
         discription:
           "Кабачок, баклажан, помидор, лук репчатый, чеснок, растительное масло, соус песто",
-        price: "250 Р",
+          skidka: "290",
+        price: "250 ",
         massa: "200г",
         id: "3",
       },
@@ -48,7 +51,8 @@ export const CardsColdFood = {
         stikerText: "-35%",
         discription:
           "Шампиньоны ,лук репчатый, душистое масло, зелень, чеснок ",
-        price: "238 Р",
+          skidka: "275",
+        price: "238",
         massa: "200г",
         id: "4",
       },
@@ -59,7 +63,8 @@ export const CardsColdFood = {
         stikerText: "Сезонное",
         discription:
           "Капуста белокочанная, шампиньоны, кинза, чеснок, соль, специи, растительное масло.",
-        price: "140 Р",
+          skidka: "175",
+        price: "140",
         massa: "200г",
         id: "5",
       },
@@ -70,7 +75,8 @@ export const CardsColdFood = {
         stikerText: "",
         discription:
           "Кабачок, баклажан, помидор, лук репчатый, чеснок, растительное масло, соус песто ",
-        price: "250 Р",
+          skidka: "290",
+        price: "250",
         massa: "200г",
         id: "6",
       },
@@ -81,7 +87,8 @@ export const CardsColdFood = {
         stikerText: "",
         discription:
           "Шампиньоны, лук репчатый, душистое масло, зелень, чеснок ",
-        price: "238 Р",
+          skidka: "290",
+        price: "238",
         massa: "200г",
         id: "7",
       },
@@ -92,7 +99,8 @@ export const CardsColdFood = {
         stikerText: "Новинка",
         discription:
           "Кускус, вяленые томаты, чеснок, петрушка, соль, специи, растительное масло.",
-        price: "135 Р",
+          skidka: "175",
+        price: "135",
         massa: "200г",
         id: "8",
       },

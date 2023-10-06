@@ -2,7 +2,7 @@ import React from "react";
 import "./Button.scss";
 
 function Button(props) {
-  const { src, text, link, isBasket, isKul, isSlider, isHeader, onClick } = props;
+  const { src, text, link, isBasket, isKul, isSlider, isHeader, onClick, isBasketCard } = props;
 
   return (
     <button
@@ -15,6 +15,8 @@ function Button(props) {
           ? "button_type_slider"
           : isHeader
           ? "button_type_header"
+          : isBasketCard
+          ? "button_type_basket-card"
           : ''
       }`}
       onClick={onClick}
