@@ -2,6 +2,7 @@
   border-radius: 24px;
   overflow: hidden;
   box-sizing: border-box;
+
   &__container-image {
     position: relative;
   }
@@ -30,8 +31,32 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    @media screen and (max-width:768px) {
+      width: 20px;
+      height: 20px;
+      top: 8px;
+      left: 8px;
+
+
+    }
+
+
     &_active {
       background: url(../../images/StarIconRed.svg);
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media screen and (max-width:768px) {
+        width: 20px;
+        height: 20px;
+        top: 8px;
+        left: 8px;
+
+      }
+
     }
   }
 
@@ -66,8 +91,11 @@
     align-items: center;
     margin: 0;
     color: #fff;
+
     @media screen and (max-width: 768px) {
       font-size: 8px;
+      line-height: 1.5;
+      
     }
   }
 
@@ -85,14 +113,16 @@
     width: 100%;
     padding-left: 12px;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
       min-height: 60px;
+      margin-bottom: 0px;
     }
 
     @media screen and (max-width: 425px) {
       font-size: 14px;
       line-height: 1.2;
       padding-left: 0;
+      margin-bottom: -12px;
     }
   }
 
@@ -110,6 +140,7 @@
     width: 100%;
     padding-left: 12px;
     padding-right: 12px;
+
     @media screen and(max-width:425px) {
       display: none;
     }
@@ -126,20 +157,19 @@
     padding: 12px;
 
     @media screen and (max-width: 425px) {
-      padding: 6px 0px;
+      padding: 0;
       align-items: normal;
-      
     }
   }
 
   &__price-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: end;
-    @media screen and (max-width:768px) {
-      align-items: start;
 
-      
+    @media screen and (max-width: 768px) {
+      align-items: start;
+      flex-direction: column;
     }
   }
 
@@ -155,28 +185,29 @@
 
     @media screen and (max-width: 425px) {
       font-size: 18px;
-      
     }
   }
 
   &__price-skidka {
-    display: none; 
+    display: none;
+
     &:after {
       content: " \20BD";
     }
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       margin: 0;
       display: flex;
-     
-      font-size: 12px;
-    font-weight: 400;
-    line-height: 1.5;
-    text-decoration-line: line-through;
-    color: #928f87;
-      
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      text-decoration-line: line-through;
+      color: #928f87;
+
+      @media screen and (max-width: 425px) {
+        font-size: 12px;
+      }
     }
-    
   }
 
   &__massa {
