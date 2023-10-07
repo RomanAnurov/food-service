@@ -1,10 +1,14 @@
 import React from "react";
 import "./Footer.scss";
 
+import Accordeon from "../Accordeon/Accordeon";
+
 
 
 
 function Footer() {
+
+  
   return (
     <section className="footer">
       <div className="footer__container">
@@ -34,7 +38,7 @@ function Footer() {
           <li><a className="footer__link" href="#fooddelivery">Сотрудничество</a></li>
           <li><a className="footer__link" href="#fooddelivery">Сертификаты</a></li>
         </ul>
-
+        <Accordeon  name="footer"/>
         <ul>
           <h4 className="footer__links" id="grafik">График работы</h4>
           <li><p className="footer__link footer__link_large">График кулинарий</p></li>

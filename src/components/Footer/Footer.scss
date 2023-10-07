@@ -1,6 +1,5 @@
 .footer {
-
-  box-shadow: -2px -4px 10px 0px #8282820D;
+  box-shadow: -2px -4px 10px 0px #8282820d;
   padding-top: 32px;
   margin-top: 120px;
   width: 100%;
@@ -8,7 +7,9 @@
   &__container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__links {
@@ -16,14 +17,15 @@
     font-weight: 700;
     text-align: left;
     line-height: 1.2;
-    color: #2E1B0E;
+    color: #2e1b0e;
     margin: 0 0 16px;
-
 
     &_last {
       text-align: right;
+      @media screen and (max-width: 768px) {
+        text-align: left;
+      }
     }
-
   }
 
   &__link {
@@ -31,22 +33,19 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    color: #928F87;
+    color: #928f87;
     margin: 0 0 8px;
     text-decoration: none;
-    
+
     &_large {
       font-weight: 700;
-      color: #2E1B0E;
-
+      color: #2e1b0e;
     }
 
     span {
       font-weight: 500;
-      color: #928F87;
-
+      color: #928f87;
     }
-
   }
 
   &__info {
@@ -54,30 +53,37 @@
     justify-content: space-between;
     margin-top: 23px;
     margin-bottom: 18px;
-
   }
 
   &__info-text {
     margin: 0;
-    color: #928F87;
+    color: #928f87;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
-
 }
 
 ul {
   padding-left: 0;
   margin: 0;
+  @media screen and(max-width:768px) {
+
+    margin-top: 24px;
+    
+  }
 
   &:nth-of-type(5) {
     text-align: right;
+    @media screen and (max-width: 768px) {
+      text-align: left;
+    }
   }
-
 }
 
 li {
   list-style: none;
-
 }

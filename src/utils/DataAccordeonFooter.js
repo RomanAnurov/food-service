@@ -1,4 +1,16 @@
-export const Data = [
+export const DataFooter = [
+
+  {
+    title: "Меню и каталоги",
+    stroke: [
+      { text: "Кулинария", link: "/" },
+      { text: "Банкетное меню", link: "/" },
+      { text: "Кондитерская", link: "/" },
+      { text: "Корпоративные обеды", link: "/" },
+    
+    ],
+  },
+
   {
     title: "Покупателю",
     stroke: [
@@ -9,6 +21,7 @@ export const Data = [
       { text: "Акции", link: "/" },
     ],
   },
+
   {
     title: "Компания",
     stroke: [
