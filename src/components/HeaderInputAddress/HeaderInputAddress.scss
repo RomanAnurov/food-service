@@ -46,6 +46,14 @@
     background-position: center;
     margin-right: 10px;
     cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+    
+    &:hover {
+      opacity: 0.6;
+       transition: 0.4s opacity;
+      }
 
   }
 
@@ -73,5 +81,13 @@
     background-position: center;
     margin-left: 10px;
     cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+    
+    &:hover {
+      opacity: 0.6;
+       transition: 0.4s opacity;
+      }
   }
 }

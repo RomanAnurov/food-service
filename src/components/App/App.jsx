@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import FoodDelivery from "../FoodDelivery/FoodDelivery";
@@ -17,16 +16,14 @@ function App() {
   const [isAddressSavePopupOpen, setIsAddressSavePopupOpen] = useState(false);
 
   useEffect(() => {
-    isCallPopupOpen && handleAddressSavePopupClose() 
-    isCallPopupOpen && handleBurgerPopupClose()
-
+    isCallPopupOpen && handleAddressSavePopupClose();
+    isCallPopupOpen && handleBurgerPopupClose();
   }, [isCallPopupOpen]);
 
   useEffect(() => {
-    isAddressPopupOpen && handleAddressSavePopupClose() 
-    isAddressPopupOpen && handleCallPopupClose()
-    isAddressPopupOpen && handleBurgerPopupClose()
-
+    isAddressPopupOpen && handleAddressSavePopupClose();
+    isAddressPopupOpen && handleCallPopupClose();
+    isAddressPopupOpen && handleBurgerPopupClose();
   }, [isAddressPopupOpen]);
 
   function handleBurgerPopupOpen() {
@@ -74,6 +71,72 @@ function App() {
       : handleAddressSavePopupOpen();
   }
 
+  // Функция закрывает все попапы
+
+  function closeAllPopups() {
+    setIsBurgerPopupOpen(false);
+    setIsCallPopupOpen(false);
+    setIsAddressPopupOpen(false);
+    setIsAddressSavePopupOpen(false);
+  }
+
+  //Закрытие попапа Esc
+
+  const handleEscClose = useCallback((event) => {
+    if (event.key === "Escape") {
+      closeAllPopups();
+    }
+  }, []);
+
+  useEffect(() => {
+    const isAnyPopupOpen =
+      isBurgerPopupOpen ||
+      isAddressPopupOpen ||
+      isAddressSavePopupOpen ||
+      isCallPopupOpen;
+    if (isAnyPopupOpen) {
+      document.addEventListener("keydown", handleEscClose);
+    } else {
+      document.removeEventListener("keydown", handleEscClose);
+    }
+  }, [
+    isBurgerPopupOpen,
+    isAddressPopupOpen,
+    isAddressSavePopupOpen,
+    isCallPopupOpen,
+    handleEscClose,
+  ]);
+
+  // Закрытие попаов при клике вне попапа
+
+  const handleMouseClose = useCallback((event) => {
+    if (
+      event.target === event.currentTarget ||
+      event.target.classList.contains("popup")
+    ) {
+      closeAllPopups();
+    }
+  }, []);
+
+  useEffect(() => {
+    const isAnyPopupOpen =
+      isBurgerPopupOpen ||
+      isAddressPopupOpen ||
+      isAddressSavePopupOpen ||
+      isCallPopupOpen;
+    if (isAnyPopupOpen) {
+      document.addEventListener("mousedown", handleMouseClose);
+    } else {
+      document.removeEventListener("mousedown", handleMouseClose);
+    }
+  }, [
+    isBurgerPopupOpen,
+    isAddressPopupOpen,
+    isAddressSavePopupOpen,
+    isCallPopupOpen,
+    handleMouseClose,
+  ]);
+
   return (
     <div className="page__content">
       <Routes>
@@ -115,7 +178,7 @@ function App() {
         />
       </Routes>
       <PopupBurgerMenu isOpen={isBurgerPopupOpen} />
-      <PopupCall isOpen={isCallPopupOpen} onClose={handleCallPopupClose}/>
+      <PopupCall isOpen={isCallPopupOpen} onClose={handleCallPopupClose} />
       <PopupAddress
         isOpen={isAddressPopupOpen}
         onClose={handleAddressPopupClose}
