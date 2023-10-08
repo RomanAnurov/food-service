@@ -3,11 +3,28 @@
   padding-top: 32px;
   margin-top: 120px;
   width: 100%;
+  @media screen and (max-width:768px) {
+    padding: 0 18px;
+    
+  }
+  @media screen and (max-width:425px) {
+    padding: 0 12px;
+    
+  }
+
 
   &__container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    @media screen and (max-width: 768px) {
+    
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: 1fr 1fr 150px;
+    }
+
+    @media screen and (max-width: 637px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 525px) {
       grid-template-columns: 1fr;
     }
   }
@@ -19,13 +36,23 @@
     line-height: 1.2;
     color: #2e1b0e;
     margin: 0 0 16px;
+    @media screen and(max-width:525px) {
+      margin-top: 16px;
+      
+    }
 
     &_last {
       text-align: right;
+      @media screen and (max-width: 1024px) {
+        text-align: left;
+        margin-top: 24px;
+      }
       @media screen and (max-width: 768px) {
         text-align: left;
+        margin-top: 0px;
       }
     }
+    
   }
 
   &__link {
@@ -36,10 +63,15 @@
     color: #928f87;
     margin: 0 0 8px;
     text-decoration: none;
+    @media screen and (max-width:425px) {
+      font-size: 14px;
+      
+    }
 
     &_large {
       font-weight: 700;
       color: #2e1b0e;
+
     }
 
     span {
@@ -72,15 +104,21 @@ ul {
   margin: 0;
   @media screen and(max-width:768px) {
 
-    margin-top: 24px;
+    margin-top: 0px;
     
   }
 
   &:nth-of-type(5) {
     text-align: right;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       text-align: left;
     }
+  }
+  &:nth-of-type(4) {
+    @media screen and (max-width:1024px) {
+      margin-top: 24px;
+    }
+    
   }
 }
 

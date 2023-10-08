@@ -25,7 +25,7 @@ export const DataFooter = [
   {
     title: "Компания",
     stroke: [
-      { text: "О «Баранкин»", link: "/" },
+      { text: "О нас", link: "/" },
       { text: "Отзывы", link: "/" },
       { text: "Новости", link: "/" },
       { text: "Вакансии", link: "/" },

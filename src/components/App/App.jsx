@@ -96,6 +96,8 @@ function App() {
               onBurgerPopup={handlePopupOpenCloseBurger}
               isOpen={isBurgerPopupOpen}
               onCallPopup={handlePopupOpenCloseCall}
+              onAddressPopup={handleAddressPopupOpen}
+              onAddressSavePopup={handleAddressSavePopupCloseOpen}
             />
           }
         />
@@ -106,6 +108,8 @@ function App() {
               onBurgerPopup={handlePopupOpenCloseBurger}
               isOpen={isBurgerPopupOpen}
               onCallPopup={handlePopupOpenCloseCall}
+              onAddressPopup={handleAddressPopupOpen}
+              onAddressSavePopup={handleAddressSavePopupCloseOpen}
             />
           }
         />

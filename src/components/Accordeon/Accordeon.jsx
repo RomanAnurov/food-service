@@ -33,7 +33,7 @@ const Accordeon = (props) => {
           
           return (
             <div className={`accordeon__wrap accordeon__wrap_type_${name}`} key={index}>
-              <div className={`accordeon__button ${clicked === index ?
+              <div className={`accordeon__button accordeon__button_type_${name} ${clicked === index ?
                 "accordeon__button_active" : ''}`}  onClick={() => toggle(index)}>
                 <h4 className={`accordeon__title accordeon__title_type_${name}`}>{item.title}</h4>
                 <img className={`accordeon__icon ${clicked === index ? "accordeon__icon_rotate" : ''}`}

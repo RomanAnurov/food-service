@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import "./Footer.scss";
 
 import Accordeon from "../Accordeon/Accordeon";
@@ -8,37 +9,46 @@ import Accordeon from "../Accordeon/Accordeon";
 
 function Footer() {
 
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+const handleResize = (event) => {
+  setScreenWidth(event.target.innerWidth);
+};
+
+    useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   
   return (
     <section className="footer">
       <div className="footer__container">
-        <ul>
+       {screenWidth > 768 && <><ul>
           <h4 className="footer__links">Меню и каталоги</h4>
           <li><a className="footer__link" href="#fooddelivery">Кулинария</a></li>
           <li><a className="footer__link" href="#fooddelivery">Банкетное меню</a></li>
           <li><a className="footer__link" href="#fooddelivery">Кондитерская</a></li>
           <li><a className="footer__link" href="#fooddelivery">Корпоративные обеды</a></li>
-        </ul>
-
-        <ul>
-          <h4 className="footer__links">Покупателю</h4>
-          <li><a className="footer__link" href="#fooddelivery">Как заказать кулинарию</a></li>
-          <li><a className="footer__link" href="#fooddelivery">Как заказать торт</a></li>
-          <li><a className="footer__link" href="#fooddelivery">Оплата и доставка</a></li>
-          <li><a className="footer__link" href="#fooddelivery">Бонусная программа</a></li>
-          <li><a className="footer__link" href="#fooddelivery">Акции</a></li>
-        </ul>
-
-        <ul>
-          <h4 className="footer__links">Компания</h4>
-          <li><a className="footer__link" href="#fooddelivery">О нас</a></li>
-          <li><a className="footer__link" href="#fooddelivery">Отзывы</a></li>
-          <li><a className="footer__link" href="#fooddelivery">Новости</a></li>
-          <li><a className="footer__link" href="#fooddelivery">Вакансии</a></li>
-          <li><a className="footer__link" href="#fooddelivery">Сотрудничество</a></li>
-          <li><a className="footer__link" href="#fooddelivery">Сертификаты</a></li>
-        </ul>
-        <Accordeon  name="footer"/>
+        </ul><ul>
+            <h4 className="footer__links">Покупателю</h4>
+            <li><a className="footer__link" href="#fooddelivery">Как заказать кулинарию</a></li>
+            <li><a className="footer__link" href="#fooddelivery">Как заказать торт</a></li>
+            <li><a className="footer__link" href="#fooddelivery">Оплата и доставка</a></li>
+            <li><a className="footer__link" href="#fooddelivery">Бонусная программа</a></li>
+            <li><a className="footer__link" href="#fooddelivery">Акции</a></li>
+          </ul><ul>
+            <h4 className="footer__links">Компания</h4>
+            <li><a className="footer__link" href="#fooddelivery">О нас</a></li>
+            <li><a className="footer__link" href="#fooddelivery">Отзывы</a></li>
+            <li><a className="footer__link" href="#fooddelivery">Новости</a></li>
+            <li><a className="footer__link" href="#fooddelivery">Вакансии</a></li>
+            <li><a className="footer__link" href="#fooddelivery">Сотрудничество</a></li>
+            <li><a className="footer__link" href="#fooddelivery">Сертификаты</a></li>
+          </ul></> }
+       {screenWidth <= 768 && <Accordeon  name="footer"/>}
         <ul>
           <h4 className="footer__links" id="grafik">График работы</h4>
           <li><p className="footer__link footer__link_large">График кулинарий</p></li>

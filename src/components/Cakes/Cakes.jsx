@@ -4,13 +4,15 @@ import Header from "../Header/Header";
 import Navigation from "../Navigation/Navigation";
 
 function Cakes(props) {
-  const { onBurgerPopup, onCallPopup, isOpen } = props;
+  const { onBurgerPopup, onCallPopup, isOpen, onAddressPopup, onAddressSavePopup } = props;
   return (
     <section className="cakes">
       <Header
         onBurgerPopup={onBurgerPopup}
         onCallPopup={onCallPopup}
         isOpen={isOpen}
+        onAddressPopup={onAddressPopup}
+        onAddressSavePopup={onAddressSavePopup}
       />
       <Navigation />
 
