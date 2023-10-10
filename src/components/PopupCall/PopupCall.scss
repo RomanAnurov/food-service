@@ -10,6 +10,10 @@
     top: 92px;
     width: 480px;
     min-width: 320px;
+    @media screen and (max-width: 768px) {
+      right: 0;
+      left: 0;
+    }
 
     @media screen and (max-width: 525px) {
       width: 100%;
@@ -99,16 +103,26 @@
     margin: 0;
   }
   &__close-call {
-    @media screen and(max-width:768px) {
-      width: 20px;
-      height: 20px;
-      top: 12px;
-      right: 12px;
-      position: absolute;
-      border: none;
+    display: none;
+    @media screen and(max-width: 768px) {
+      display: block;
       background: url(../../images/ButtonCloseIcon.svg);
       background-position: center;
       background-repeat: no-repeat;
+      top: -20px;
+      right: -20px;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border: none;
+
+    }
+
+    @media screen and(max-width: 525px) {
+      
+      top: 12px;
+      right: 12px;
+      
     }
   }
 }
