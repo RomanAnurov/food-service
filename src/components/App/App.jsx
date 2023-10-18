@@ -111,8 +111,8 @@ function App() {
 
   const handleMouseClose = useCallback((event) => {
     if (
-      event.target === event.currentTarget ||
-      event.target.classList.contains("popup")
+      event.target.classList.contains("popup") ||
+      !event.target.classList.contains("popup")
     ) {
       closeAllPopups();
     }

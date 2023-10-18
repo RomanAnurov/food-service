@@ -10,7 +10,10 @@ function Popup(props) {
         isOpen ? "popup_type_opened" : ""
       }`}
     >
-      <div className={`popup__container popup__container_type_${name}`}>
+      <div
+        className={`popup__container popup__container_type_${name}`}
+        onMouseDown={(evt) => evt.stopPropagation()}
+      >
         {children}
       </div>
     </section>

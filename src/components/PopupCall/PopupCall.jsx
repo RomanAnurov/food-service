@@ -6,7 +6,7 @@ function PopupCall(props) {
   const { isOpen, onClose} = props;
 
   return (
-    <Popup isOpen={ isOpen } name="call">
+    <Popup isOpen={ isOpen } name="call" >
       <div className="popup__telephones">
         <h4 className="popup__telephones-title">Служба доставки</h4>
         <p className="popup__telephone">+7 (999) 999-99-99</p>
