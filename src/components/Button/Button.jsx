@@ -23,7 +23,7 @@ function Button(props) {
       type="button"
     >
       <img src={src} className="button__icon" alt="иконка" />
-      <a href={link}>{text}</a>
+      <a className="button__text" href={link}>{text}</a>
     </button>
   );
 }

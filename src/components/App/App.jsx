@@ -112,7 +112,10 @@ function App() {
   const handleMouseClose = useCallback((event) => {
     if (
       event.target.classList.contains("popup") ||
-      !event.target.classList.contains("popup")
+      (!event.target.classList.contains("header__burger-icon") &&
+        !event.target.classList.contains("addressform__edit-button") &&
+        !event.target.classList.contains("button__icon") &&
+        !event.target.classList.contains("button__text"))
     ) {
       closeAllPopups();
     }

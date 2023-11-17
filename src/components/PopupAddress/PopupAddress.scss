@@ -34,7 +34,7 @@
       position: relative;
       box-shadow: 2px 2px 16px 0px #72727229;
 
-      @media screen and(max-width: 768px) {
+      @media screen and (max-width: 768px) {
         padding: 12px 13px 17px;
         width: 100%;
         position: absolute;
@@ -79,12 +79,12 @@
     margin-top: 0;
     margin-bottom: 32px;
 
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
       font-size: 24px;
       font-weight: 700;
            
     }
-    @media screen and(max-width:525px) {
+    @media screen and (max-width:525px) {
       max-width: 263px;
       margin-bottom: 16px;
       
